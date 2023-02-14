@@ -6,9 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EZHomeViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (nonatomic, strong) UIWindow *window;
+/// 后续可以用来跟踪 vc
+@property (nonatomic, strong) UINavigationController *mainNavVC;
+@property (nonatomic, strong) EZHomeViewController *rootVC;
 
 @end
 

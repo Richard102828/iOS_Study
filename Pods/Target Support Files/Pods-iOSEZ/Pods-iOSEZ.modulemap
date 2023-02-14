@@ -1,0 +1,6 @@
+framework module Pods_iOSEZ {
+  umbrella header "Pods-iOSEZ-umbrella.h"
+
+  export *
+  module * { export * }
+}

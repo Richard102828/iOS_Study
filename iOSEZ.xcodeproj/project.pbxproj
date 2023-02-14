@@ -3,20 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422F699C310F4E9F1E695322 /* Pods_iOSEZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DD538F9ED40A5EFC36BEFF /* Pods_iOSEZ.framework */; };
+		8EFCEFB063E794433CD4826F /* Pods_iOSEZ_iOSEZUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA009BE1938523710DFE72F /* Pods_iOSEZ_iOSEZUITests.framework */; };
+		B01B7203299B8DC100FC4907 /* EZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01B7202299B8DC100FC4907 /* EZHomeViewController.m */; };
 		B07C0CC8298BAFC000F842D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CC7298BAFC000F842D0 /* AppDelegate.m */; };
 		B07C0CCB298BAFC000F842D0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CCA298BAFC000F842D0 /* SceneDelegate.m */; };
 		B07C0CCE298BAFC000F842D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CCD298BAFC000F842D0 /* ViewController.m */; };
-		B07C0CD1298BAFC000F842D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07C0CCF298BAFC000F842D0 /* Main.storyboard */; };
 		B07C0CD3298BAFC100F842D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07C0CD2298BAFC100F842D0 /* Assets.xcassets */; };
 		B07C0CD6298BAFC100F842D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07C0CD4298BAFC100F842D0 /* LaunchScreen.storyboard */; };
 		B07C0CD9298BAFC100F842D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CD8298BAFC100F842D0 /* main.m */; };
 		B07C0CE3298BAFC100F842D0 /* iOSEZTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CE2298BAFC100F842D0 /* iOSEZTests.m */; };
 		B07C0CED298BAFC100F842D0 /* iOSEZUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CEC298BAFC100F842D0 /* iOSEZUITests.m */; };
 		B07C0CEF298BAFC100F842D0 /* iOSEZUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CEE298BAFC100F842D0 /* iOSEZUITestsLaunchTests.m */; };
+		F55AD15EEA31AD067C754774 /* Pods_iOSEZTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F59A7F0E31986D8BAB47C1 /* Pods_iOSEZTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0319F07193DF50B1D7FF70E0 /* Pods-iOSEZTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSEZTests.release.xcconfig"; path = "Target Support Files/Pods-iOSEZTests/Pods-iOSEZTests.release.xcconfig"; sourceTree = "<group>"; };
+		0DA009BE1938523710DFE72F /* Pods_iOSEZ_iOSEZUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSEZ_iOSEZUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55280D18FFCC3BDFDECEAC3E /* Pods-iOSEZTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSEZTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSEZTests/Pods-iOSEZTests.debug.xcconfig"; sourceTree = "<group>"; };
+		58DD538F9ED40A5EFC36BEFF /* Pods_iOSEZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSEZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D58D4C06E7952AB8C1D40B2 /* Pods-iOSEZ-iOSEZUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSEZ-iOSEZUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSEZ-iOSEZUITests/Pods-iOSEZ-iOSEZUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C106EAFEC27EA7DEB3E4F9B /* Pods-iOSEZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSEZ.debug.xcconfig"; path = "Target Support Files/Pods-iOSEZ/Pods-iOSEZ.debug.xcconfig"; sourceTree = "<group>"; };
+		B01B7201299B8DC100FC4907 /* EZHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZHomeViewController.h; sourceTree = "<group>"; };
+		B01B7202299B8DC100FC4907 /* EZHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZHomeViewController.m; sourceTree = "<group>"; };
 		B07C0CC3298BAFC000F842D0 /* iOSEZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSEZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07C0CC6298BAFC000F842D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B07C0CC7298BAFC000F842D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,7 +55,6 @@
 		B07C0CCA298BAFC000F842D0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		B07C0CCC298BAFC000F842D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B07C0CCD298BAFC000F842D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B07C0CD0298BAFC000F842D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B07C0CD2298BAFC100F842D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B07C0CD5298BAFC100F842D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B07C0CD7298BAFC100F842D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +64,9 @@
 		B07C0CE8298BAFC100F842D0 /* iOSEZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSEZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07C0CEC298BAFC100F842D0 /* iOSEZUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSEZUITests.m; sourceTree = "<group>"; };
 		B07C0CEE298BAFC100F842D0 /* iOSEZUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSEZUITestsLaunchTests.m; sourceTree = "<group>"; };
+		C2F59A7F0E31986D8BAB47C1 /* Pods_iOSEZTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSEZTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC844000A4DE76470D15944C /* Pods-iOSEZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSEZ.release.xcconfig"; path = "Target Support Files/Pods-iOSEZ/Pods-iOSEZ.release.xcconfig"; sourceTree = "<group>"; };
+		D1363A798C19442114D1D351 /* Pods-iOSEZ-iOSEZUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSEZ-iOSEZUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSEZ-iOSEZUITests/Pods-iOSEZ-iOSEZUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422F699C310F4E9F1E695322 /* Pods_iOSEZ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55AD15EEA31AD067C754774 /* Pods_iOSEZTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EFCEFB063E794433CD4826F /* Pods_iOSEZ_iOSEZUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C59D50F9BD87FB2A771B323 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58DD538F9ED40A5EFC36BEFF /* Pods_iOSEZ.framework */,
+				0DA009BE1938523710DFE72F /* Pods_iOSEZ_iOSEZUITests.framework */,
+				C2F59A7F0E31986D8BAB47C1 /* Pods_iOSEZTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7459AD5CAE6B94A5E0F1A724 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C106EAFEC27EA7DEB3E4F9B /* Pods-iOSEZ.debug.xcconfig */,
+				CC844000A4DE76470D15944C /* Pods-iOSEZ.release.xcconfig */,
+				D1363A798C19442114D1D351 /* Pods-iOSEZ-iOSEZUITests.debug.xcconfig */,
+				5D58D4C06E7952AB8C1D40B2 /* Pods-iOSEZ-iOSEZUITests.release.xcconfig */,
+				55280D18FFCC3BDFDECEAC3E /* Pods-iOSEZTests.debug.xcconfig */,
+				0319F07193DF50B1D7FF70E0 /* Pods-iOSEZTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B07C0CBA298BAFC000F842D0 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +127,8 @@
 				B07C0CE1298BAFC100F842D0 /* iOSEZTests */,
 				B07C0CEB298BAFC100F842D0 /* iOSEZUITests */,
 				B07C0CC4298BAFC000F842D0 /* Products */,
+				7459AD5CAE6B94A5E0F1A724 /* Pods */,
+				2C59D50F9BD87FB2A771B323 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,11 +151,12 @@
 				B07C0CCA298BAFC000F842D0 /* SceneDelegate.m */,
 				B07C0CCC298BAFC000F842D0 /* ViewController.h */,
 				B07C0CCD298BAFC000F842D0 /* ViewController.m */,
-				B07C0CCF298BAFC000F842D0 /* Main.storyboard */,
 				B07C0CD2298BAFC100F842D0 /* Assets.xcassets */,
 				B07C0CD4298BAFC100F842D0 /* LaunchScreen.storyboard */,
 				B07C0CD7298BAFC100F842D0 /* Info.plist */,
 				B07C0CD8298BAFC100F842D0 /* main.m */,
+				B01B7201299B8DC100FC4907 /* EZHomeViewController.h */,
+				B01B7202299B8DC100FC4907 /* EZHomeViewController.m */,
 			);
 			path = iOSEZ;
 			sourceTree = "<group>";
@@ -143,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B07C0CF2298BAFC100F842D0 /* Build configuration list for PBXNativeTarget "iOSEZ" */;
 			buildPhases = (
+				70F35793E1F103A4C929E660 /* [CP] Check Pods Manifest.lock */,
 				B07C0CBF298BAFC000F842D0 /* Sources */,
 				B07C0CC0298BAFC000F842D0 /* Frameworks */,
 				B07C0CC1298BAFC000F842D0 /* Resources */,
+				0722FD929B11901695220877 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B07C0CF5298BAFC100F842D0 /* Build configuration list for PBXNativeTarget "iOSEZTests" */;
 			buildPhases = (
+				75E88941C78B55F66DC4C182 /* [CP] Check Pods Manifest.lock */,
 				B07C0CDA298BAFC100F842D0 /* Sources */,
 				B07C0CDB298BAFC100F842D0 /* Frameworks */,
 				B07C0CDC298BAFC100F842D0 /* Resources */,
@@ -178,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B07C0CF8298BAFC100F842D0 /* Build configuration list for PBXNativeTarget "iOSEZUITests" */;
 			buildPhases = (
+				91628EB53273CC8E3639A692 /* [CP] Check Pods Manifest.lock */,
 				B07C0CE4298BAFC100F842D0 /* Sources */,
 				B07C0CE5298BAFC100F842D0 /* Frameworks */,
 				B07C0CE6298BAFC100F842D0 /* Resources */,
+				19036A44B33BFDBBA333F084 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,7 +262,7 @@
 				};
 			};
 			buildConfigurationList = B07C0CBE298BAFC000F842D0 /* Build configuration list for PBXProject "iOSEZ" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -241,7 +288,6 @@
 			files = (
 				B07C0CD6298BAFC100F842D0 /* LaunchScreen.storyboard in Resources */,
 				B07C0CD3298BAFC100F842D0 /* Assets.xcassets in Resources */,
-				B07C0CD1298BAFC000F842D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +307,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0722FD929B11901695220877 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSEZ/Pods-iOSEZ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSEZ/Pods-iOSEZ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSEZ/Pods-iOSEZ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19036A44B33BFDBBA333F084 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSEZ-iOSEZUITests/Pods-iOSEZ-iOSEZUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSEZ-iOSEZUITests/Pods-iOSEZ-iOSEZUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSEZ-iOSEZUITests/Pods-iOSEZ-iOSEZUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70F35793E1F103A4C929E660 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSEZ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75E88941C78B55F66DC4C182 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSEZTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91628EB53273CC8E3639A692 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSEZ-iOSEZUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B07C0CBF298BAFC000F842D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,6 +418,7 @@
 				B07C0CCE298BAFC000F842D0 /* ViewController.m in Sources */,
 				B07C0CC8298BAFC000F842D0 /* AppDelegate.m in Sources */,
 				B07C0CD9298BAFC100F842D0 /* main.m in Sources */,
+				B01B7203299B8DC100FC4907 /* EZHomeViewController.m in Sources */,
 				B07C0CCB298BAFC000F842D0 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,14 +456,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B07C0CCF298BAFC000F842D0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B07C0CD0298BAFC000F842D0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B07C0CD4298BAFC100F842D0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,6 +579,7 @@
 		};
 		B07C0CF3298BAFC100F842D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C106EAFEC27EA7DEB3E4F9B /* Pods-iOSEZ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,9 +590,10 @@
 				INFOPLIST_FILE = iOSEZ/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +608,7 @@
 		};
 		B07C0CF4298BAFC100F842D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC844000A4DE76470D15944C /* Pods-iOSEZ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,9 +619,10 @@
 				INFOPLIST_FILE = iOSEZ/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -491,6 +637,7 @@
 		};
 		B07C0CF6298BAFC100F842D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55280D18FFCC3BDFDECEAC3E /* Pods-iOSEZTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -509,6 +656,7 @@
 		};
 		B07C0CF7298BAFC100F842D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0319F07193DF50B1D7FF70E0 /* Pods-iOSEZTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +675,7 @@
 		};
 		B07C0CF9298BAFC100F842D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1363A798C19442114D1D351 /* Pods-iOSEZ-iOSEZUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -543,6 +692,7 @@
 		};
 		B07C0CFA298BAFC100F842D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D58D4C06E7952AB8C1D40B2 /* Pods-iOSEZ-iOSEZUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

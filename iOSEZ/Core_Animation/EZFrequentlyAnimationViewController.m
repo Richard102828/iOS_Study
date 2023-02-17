@@ -1,25 +1,29 @@
 //
-//  ViewController.m
+//  EZFrequentlyAnimationViewController.m
 //  iOSEZ
 //
-//  Created by ezrealzhang on 2023/2/2.
+//  Created by ezrealzhang on 2023/2/14.
 //
 
-#import "ViewController.h"
+#import "EZFrequentlyAnimationViewController.h"
 
-@interface ViewController ()
+
+@interface EZFrequentlyAnimationViewController ()
 
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) CAShapeLayer *tempLayer;
 @property (nonatomic, strong) UITableView *tableView;
 
+@property (nonatomic, strong) NSThread *thread1;
+
 @end
 
-@implementation ViewController
+@implementation EZFrequentlyAnimationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = UIColor.whiteColor;
     self.button = [[UIButton alloc] initWithFrame:CGRectMake(200, 200, 200, 200)];
     [self.button addTarget:self action:@selector(temp) forControlEvents:UIControlEventTouchUpInside];
     self.button.backgroundColor = UIColor.yellowColor;
@@ -56,6 +60,7 @@
     self.tempLayer = shape;
     self.tempLayer.strokeEnd = 0;
 }
+
 - (void)temp {
 //    [CATransaction setDisableActions:YES];
     // @ezrealzhang 明天来看看
@@ -84,8 +89,14 @@
     self.tempLayer.strokeEnd = 0;
     [CATransaction commit];
     // i > 1 才会出现抖动，如果是 1 就没有，很奇怪. strokeEnd 字段有问题
-    NSThread *thread1 = [[NSThread alloc] initWithBlock:^{
+    self.thread1 = [[NSThread alloc] initWithBlock:^{
         for (CGFloat i = 0; i <= 10; i += 0.001076) {
+            if (self.thread1.isCancelled) {
+                [NSThread exit];
+                self.thread1 = nil;
+                return;
+            }
+            
             // 0.016
             // 0.008
             [NSThread sleepForTimeInterval:0.001];
@@ -108,7 +119,7 @@
             }];
         }
     }];
-    [thread1 start];
+    [self.thread1 start];
 
     
     
@@ -139,6 +150,11 @@
 //    [UIView animateWithDuration:10 animations:^{
 //        self.tempLayer.strokeEnd = 1;
 //    } completion:nil];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [self.thread1 cancel];
 }
 
 

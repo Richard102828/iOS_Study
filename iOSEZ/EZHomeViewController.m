@@ -6,7 +6,10 @@
 //
 
 #import "EZHomeViewController.h"
+
+#import "EZFrequentlyAnimationViewController.h"
 #import "SVProgressHUD.h"
+#import "iOSEZ-Swift.h"
 
 #define kCellReuseIdentifier    @"EZHomeVCTableViewCell_Identifier"
 
@@ -67,6 +70,11 @@
     NSString *title = [[self.datas objectAtIndex:indexPath.section].allValues.firstObject objectAtIndex:indexPath.row];
     if ([title isEqualToString:kSection_0_row_0]) {
         // @ezrealzhang todo
+        EZFrequentlyAnimationViewController *vc = [[EZFrequentlyAnimationViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:kSection_1_row_1]) {
+        EZCombineViewController *vc = [[EZCombineViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     } else {
         [SVProgressHUD showInfoWithStatus:@"尚未实现"];
     }

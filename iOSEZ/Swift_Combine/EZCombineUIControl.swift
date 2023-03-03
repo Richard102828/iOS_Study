@@ -11,6 +11,7 @@ import UIKit
 
 // MARK: - UIControl 的 Publisher
 
+// @ezrealzhang 理解一下这部分
 extension Publishers {
     // subscrption
     private final class UIControlSubscription<S: Subscriber, C: UIControl> : Subscription where S.Input == C, S.Failure == Never {
@@ -28,6 +29,9 @@ extension Publishers {
         
         func request(_ demand: Subscribers.Demand) {
             // nothing 对 control 的事件，直接处理
+            // @ezrealzhang 可以对 demand 进行处理，来控制发布（如：demand >= Subscribers.Demand.none）
+            // @ezrealzhang Publisher 到底是怎么发布值到 Subscriber 的？
+            // @ezrealzhang 对应一般的值类型，不会就是在这里做 receive 操作的吧？那对于 Future 是怎么处理的？
         }
         
         func cancel() {
@@ -68,7 +72,6 @@ extension UIControl {
     }
 }
 
-// @ezrealzhang 问题 1 ：能不能直接用 AnyPublisher<UIControl, Never> 这样呢？这样就没指定 subscription 来连接了？
 extension UITextField {
     func textChangePublisher() -> AnyPublisher<String?, Never> {
         return Publishers.UIControlPublisher(control: self, event: .editingChanged)

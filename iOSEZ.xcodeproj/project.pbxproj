@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		422F699C310F4E9F1E695322 /* Pods_iOSEZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DD538F9ED40A5EFC36BEFF /* Pods_iOSEZ.framework */; };
 		8EFCEFB063E794433CD4826F /* Pods_iOSEZ_iOSEZUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA009BE1938523710DFE72F /* Pods_iOSEZ_iOSEZUITests.framework */; };
+		B00D001C29A34EF80024DC25 /* PublisherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D001B29A34EF80024DC25 /* PublisherTest.swift */; };
 		B01B7203299B8DC100FC4907 /* EZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01B7202299B8DC100FC4907 /* EZHomeViewController.m */; };
 		B01B7207299BB3A400FC4907 /* EZFrequentlyAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01B7206299BB3A400FC4907 /* EZFrequentlyAnimationViewController.m */; };
 		B01B720F299BC08F00FC4907 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01B720E299BC08F00FC4907 /* Test.swift */; };
@@ -49,6 +50,7 @@
 		58DD538F9ED40A5EFC36BEFF /* Pods_iOSEZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSEZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D58D4C06E7952AB8C1D40B2 /* Pods-iOSEZ-iOSEZUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSEZ-iOSEZUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSEZ-iOSEZUITests/Pods-iOSEZ-iOSEZUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6C106EAFEC27EA7DEB3E4F9B /* Pods-iOSEZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSEZ.debug.xcconfig"; path = "Target Support Files/Pods-iOSEZ/Pods-iOSEZ.debug.xcconfig"; sourceTree = "<group>"; };
+		B00D001B29A34EF80024DC25 /* PublisherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherTest.swift; sourceTree = "<group>"; };
 		B01B7201299B8DC100FC4907 /* EZHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZHomeViewController.h; sourceTree = "<group>"; };
 		B01B7202299B8DC100FC4907 /* EZHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZHomeViewController.m; sourceTree = "<group>"; };
 		B01B7205299BB3A400FC4907 /* EZFrequentlyAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZFrequentlyAnimationViewController.h; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				B01B7215299BC34200FC4907 /* EZCombineViewController.swift */,
 				B0C06B9F299F16C8008A3493 /* EZCombineUIControl.swift */,
 				B0C06BA1299F2EA8008A3493 /* RegisterViewModel.swift */,
+				B00D001B29A34EF80024DC25 /* PublisherTest.swift */,
 			);
 			path = Swift_Combine;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C06BA0299F16C8008A3493 /* EZCombineUIControl.swift in Sources */,
+				B00D001C29A34EF80024DC25 /* PublisherTest.swift in Sources */,
 				B07C0CC8298BAFC000F842D0 /* AppDelegate.m in Sources */,
 				B07C0CD9298BAFC100F842D0 /* main.m in Sources */,
 				B0C06BA2299F2EA8008A3493 /* RegisterViewModel.swift in Sources */,
@@ -623,7 +627,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -657,7 +661,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

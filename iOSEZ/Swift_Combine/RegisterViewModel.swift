@@ -8,8 +8,8 @@
 import Foundation
 import Combine
 
-class RegisterCombineViewModel {
-    @Published var userName: String?
+class RegisterCombineViewModel : NSObject {
+    @Published @objc dynamic var userName: String?
     @Published var password: String?
     @Published var confirmPassword: String?
     @Published var accept: Bool = false

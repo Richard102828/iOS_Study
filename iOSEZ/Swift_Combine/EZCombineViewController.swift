@@ -44,6 +44,7 @@ class EZCombineViewController: UIViewController {
     }()
     
     // @ezrealzhang 持有 cancelable 对象，保证流程中的 publisher 不会被释放掉
+    // @ezrealzhang 这块可以改造成与当前 vc 生命周期相绑定的逻辑，类似 android 的 live data
     private var cancelableCollection: Set<AnyCancellable> = []
     
     override func viewDidLoad() {
@@ -84,34 +85,35 @@ class EZCombineViewController: UIViewController {
             self.viewModel.accept = isOn
         }.store(in: &cancelableCollection)
         // enable
+        // @ezrealzhang 这里会执行一次，感觉就跟 promise 一样，创建的时候会执行
         viewModel.registerValuePublisher().sink { enable in
-            self.registerBtn.isEnabled = enable
+//            self.registerBtn.isEnabled = enable
+            self.registerBtn.isEnabled = true
         }.store(in: &cancelableCollection)
     }
     
-   @objc private func showRegisterTip() {
-       SVProgressHUD.showInfo(withStatus: "注册成功")
+    let testIns = PublisherTest()
+    @objc private func showRegisterTip() {
+        SVProgressHUD.showInfo(withStatus: "注册成功")
+        // @ezrealzhang 后面整理代码的时候移出去，现在先把学习的任务完成，后面再来整理项目
+        
+        //       PublisherTest().notificationTest()
+        //       NotificationCenter.default.post(name: .init(rawValue: "checkSubscriptions"), object: nil)
+        
+//        testIns.backPressureTest()
+//        testIns.timerTest()
+//        testIns.valueSubject?.sink(receiveValue: { value in
+//            print("\(value)")
+//        }).store(in: &cancelableCollection)
+//        testIns.currentValueSubject()
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // @ezrealzhang 实例 1 - URLSession
 
 func makeRequest() {
     let publisher = URLSession.shared.dataTaskPublisher(for: URL(string: "xxx")!)
-    let cancelable = publisher
+    _ = publisher
         .receive(on: RunLoop.main)
         .sink { completion in
         switch completion {
@@ -126,10 +128,7 @@ func makeRequest() {
     }
 }
 
-// @ezrealzhang 实例 2 - 登陆注册
-
-
-
+// @ezrealzhang 实例 2 - Timer
 
 func test2<T>(vc: T) where T: EZCombineViewController {
     

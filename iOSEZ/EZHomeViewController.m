@@ -21,6 +21,7 @@
 #define kSection_0_row_0    @"频繁的动画"
 #define kSection_1_row_0    @"swift ui"
 #define kSection_1_row_1    @"combine"
+#define kSection_1_row_2    @"tca"
 #define kScetion_2_row_0    @"swift 并发"
 #define kSection_3_row_0    @"音视频_1"
 
@@ -75,6 +76,9 @@
     } else if ([title isEqualToString:kSection_1_row_1]) {
         EZCombineViewController *vc = [[EZCombineViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:kSection_1_row_2]) {
+        EZTCAViewController *vc = [[EZTCAViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     } else {
         [SVProgressHUD showInfoWithStatus:@"尚未实现"];
     }
@@ -100,6 +104,7 @@
             @{kSection_1 : @[
                 kSection_1_row_0,
                 kSection_1_row_1,
+                kSection_1_row_2,
             ]},
             @{kSection_2 : @[
                 kScetion_2_row_0,

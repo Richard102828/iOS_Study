@@ -1,0 +1,33 @@
+{
+  "name": "ComposableArchitecture",
+  "version": "0.8.0",
+  "summary": "A short description of ComposableArchitecture.",
+  "homepage": "https://www.pointfree.co/collections/composable-architecture",
+  "authors": {
+    "Point-Free": "support@pointfree.co"
+  },
+  "swift_versions": "5.6",
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source": {
+    "git": "https://github.com/pointfreeco/swift-composable-architecture.git",
+    "tag": "0.8.0"
+  },
+  "source_files": "Sources/ComposableArchitecture/**/*.swift",
+  "dependencies": {
+    "CasePaths": [
+
+    ],
+    "CombineSchedulers": [
+
+    ],
+    "CustomDump": [
+
+    ],
+    "IdentifiedCollections": [
+
+    ]
+  },
+  "swift_version": "5.6"
+}

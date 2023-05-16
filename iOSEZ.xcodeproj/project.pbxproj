@@ -14,6 +14,10 @@
 		B01B7207299BB3A400FC4907 /* EZFrequentlyAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01B7206299BB3A400FC4907 /* EZFrequentlyAnimationViewController.m */; };
 		B01B720F299BC08F00FC4907 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01B720E299BC08F00FC4907 /* Test.swift */; };
 		B01B7216299BC34200FC4907 /* EZCombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01B7215299BC34200FC4907 /* EZCombineViewController.swift */; };
+		B0758E0C2A11DB8000A20A61 /* TCAContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0758E0B2A11DB8000A20A61 /* TCAContentView.swift */; };
+		B0758E0E2A1207FF00A20A61 /* EZTCASwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0758E0D2A1207FF00A20A61 /* EZTCASwiftUIViewController.swift */; };
+		B0758E1B2A121A3E00A20A61 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0758E1A2A121A3E00A20A61 /* DemoTests.swift */; };
+		B0758E1C2A121A7400A20A61 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0758E1A2A121A3E00A20A61 /* DemoTests.swift */; };
 		B07C0CC8298BAFC000F842D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CC7298BAFC000F842D0 /* AppDelegate.m */; };
 		B07C0CD3298BAFC100F842D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07C0CD2298BAFC100F842D0 /* Assets.xcassets */; };
 		B07C0CD6298BAFC100F842D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07C0CD4298BAFC100F842D0 /* LaunchScreen.storyboard */; };
@@ -23,6 +27,9 @@
 		B07C0CEF298BAFC100F842D0 /* iOSEZUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CEE298BAFC100F842D0 /* iOSEZUITestsLaunchTests.m */; };
 		B0846DE72A063655001E5DA0 /* EZTCAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0846DE62A063655001E5DA0 /* EZTCAViewController.swift */; };
 		B0846DEA2A06396D001E5DA0 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B0846DE92A06396D001E5DA0 /* ComposableArchitecture */; };
+		B0A9209C2A12202300B84FAD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A9209B2A12202200B84FAD /* XCTest.framework */; platformFilter = ios; settings = {ATTRIBUTES = (Weak, ); }; };
+		B0A9209D2A12204900B84FAD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A9209B2A12202200B84FAD /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B0B86FF72A124D490071E5AE /* TCAContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0758E0B2A11DB8000A20A61 /* TCAContentView.swift */; };
 		B0C06BA0299F16C8008A3493 /* EZCombineUIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C06B9F299F16C8008A3493 /* EZCombineUIControl.swift */; };
 		B0C06BA2299F2EA8008A3493 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C06BA1299F2EA8008A3493 /* RegisterViewModel.swift */; };
 		F55AD15EEA31AD067C754774 /* Pods_iOSEZTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F59A7F0E31986D8BAB47C1 /* Pods_iOSEZTests.framework */; };
@@ -60,6 +67,10 @@
 		B01B720E299BC08F00FC4907 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		B01B7214299BC2AD00FC4907 /* iOSEZ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSEZ-Bridging-Header.h"; sourceTree = "<group>"; };
 		B01B7215299BC34200FC4907 /* EZCombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZCombineViewController.swift; sourceTree = "<group>"; };
+		B0758E0B2A11DB8000A20A61 /* TCAContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAContentView.swift; sourceTree = "<group>"; };
+		B0758E0D2A1207FF00A20A61 /* EZTCASwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZTCASwiftUIViewController.swift; sourceTree = "<group>"; };
+		B0758E0F2A120A4D00A20A61 /* iOSEZTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSEZTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B0758E1A2A121A3E00A20A61 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
 		B07C0CC3298BAFC000F842D0 /* iOSEZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSEZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07C0CC6298BAFC000F842D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B07C0CC7298BAFC000F842D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +84,8 @@
 		B07C0CEC298BAFC100F842D0 /* iOSEZUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSEZUITests.m; sourceTree = "<group>"; };
 		B07C0CEE298BAFC100F842D0 /* iOSEZUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSEZUITestsLaunchTests.m; sourceTree = "<group>"; };
 		B0846DE62A063655001E5DA0 /* EZTCAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZTCAViewController.swift; sourceTree = "<group>"; };
+		B0A920992A121F9A00B84FAD /* Xcode.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Xcode.app; path = ../../../../Applications/Xcode.app; sourceTree = "<group>"; };
+		B0A9209B2A12202200B84FAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B0C06B9F299F16C8008A3493 /* EZCombineUIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZCombineUIControl.swift; sourceTree = "<group>"; };
 		B0C06BA1299F2EA8008A3493 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		C2F59A7F0E31986D8BAB47C1 /* Pods_iOSEZTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSEZTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A9209D2A12204900B84FAD /* XCTest.framework in Frameworks */,
 				B0846DEA2A06396D001E5DA0 /* ComposableArchitecture in Frameworks */,
 				422F699C310F4E9F1E695322 /* Pods_iOSEZ.framework in Frameworks */,
 			);
@@ -94,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A9209C2A12202300B84FAD /* XCTest.framework in Frameworks */,
 				F55AD15EEA31AD067C754774 /* Pods_iOSEZTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +127,8 @@
 		2C59D50F9BD87FB2A771B323 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0A9209B2A12202200B84FAD /* XCTest.framework */,
+				B0A920992A121F9A00B84FAD /* Xcode.app */,
 				58DD538F9ED40A5EFC36BEFF /* Pods_iOSEZ.framework */,
 				0DA009BE1938523710DFE72F /* Pods_iOSEZ_iOSEZUITests.framework */,
 				C2F59A7F0E31986D8BAB47C1 /* Pods_iOSEZTests.framework */,
@@ -149,6 +166,8 @@
 				B0C06BA1299F2EA8008A3493 /* RegisterViewModel.swift */,
 				B00D001B29A34EF80024DC25 /* PublisherTest.swift */,
 				B0846DE62A063655001E5DA0 /* EZTCAViewController.swift */,
+				B0758E0B2A11DB8000A20A61 /* TCAContentView.swift */,
+				B0758E0D2A1207FF00A20A61 /* EZTCASwiftUIViewController.swift */,
 			);
 			path = Swift_Combine;
 			sourceTree = "<group>";
@@ -199,6 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				B07C0CE2298BAFC100F842D0 /* iOSEZTests.m */,
+				B0758E0F2A120A4D00A20A61 /* iOSEZTests-Bridging-Header.h */,
+				B0758E1A2A121A3E00A20A61 /* DemoTests.swift */,
 			);
 			path = iOSEZTests;
 			sourceTree = "<group>";
@@ -298,6 +319,7 @@
 					};
 					B07C0CDD298BAFC100F842D0 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 						TestTargetID = B07C0CC2298BAFC000F842D0;
 					};
 					B07C0CE7298BAFC100F842D0 = {
@@ -463,15 +485,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0758E0E2A1207FF00A20A61 /* EZTCASwiftUIViewController.swift in Sources */,
 				B0846DE72A063655001E5DA0 /* EZTCAViewController.swift in Sources */,
 				B0C06BA0299F16C8008A3493 /* EZCombineUIControl.swift in Sources */,
 				B00D001C29A34EF80024DC25 /* PublisherTest.swift in Sources */,
 				B07C0CC8298BAFC000F842D0 /* AppDelegate.m in Sources */,
 				B07C0CD9298BAFC100F842D0 /* main.m in Sources */,
+				B0758E0C2A11DB8000A20A61 /* TCAContentView.swift in Sources */,
 				B0C06BA2299F2EA8008A3493 /* RegisterViewModel.swift in Sources */,
 				B01B720F299BC08F00FC4907 /* Test.swift in Sources */,
 				B01B7216299BC34200FC4907 /* EZCombineViewController.swift in Sources */,
 				B01B7203299B8DC100FC4907 /* EZHomeViewController.m in Sources */,
+				B0758E1C2A121A7400A20A61 /* DemoTests.swift in Sources */,
 				B01B7207299BB3A400FC4907 /* EZFrequentlyAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +505,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0758E1B2A121A3E00A20A61 /* DemoTests.swift in Sources */,
+				B0B86FF72A124D490071E5AE /* TCAContentView.swift in Sources */,
 				B07C0CE3298BAFC100F842D0 /* iOSEZTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,15 +730,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XNJX6XDKBF;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezrealzhang.iOSEZTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSEZTests/iOSEZTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSEZ.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOSEZ";
 			};
@@ -723,15 +759,23 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XNJX6XDKBF;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezrealzhang.iOSEZTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSEZTests/iOSEZTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSEZ.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOSEZ";
 			};

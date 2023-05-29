@@ -18,6 +18,7 @@
 		B0758E0E2A1207FF00A20A61 /* EZTCASwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0758E0D2A1207FF00A20A61 /* EZTCASwiftUIViewController.swift */; };
 		B0758E1B2A121A3E00A20A61 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0758E1A2A121A3E00A20A61 /* DemoTests.swift */; };
 		B0758E1C2A121A7400A20A61 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0758E1A2A121A3E00A20A61 /* DemoTests.swift */; };
+		B078C2E12A1F398C0086FD8C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078C2E02A1F398C0086FD8C /* GameView.swift */; };
 		B07C0CC8298BAFC000F842D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CC7298BAFC000F842D0 /* AppDelegate.m */; };
 		B07C0CD3298BAFC100F842D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07C0CD2298BAFC100F842D0 /* Assets.xcassets */; };
 		B07C0CD6298BAFC100F842D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07C0CD4298BAFC100F842D0 /* LaunchScreen.storyboard */; };
@@ -25,6 +26,7 @@
 		B07C0CE3298BAFC100F842D0 /* iOSEZTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CE2298BAFC100F842D0 /* iOSEZTests.m */; };
 		B07C0CED298BAFC100F842D0 /* iOSEZUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CEC298BAFC100F842D0 /* iOSEZUITests.m */; };
 		B07C0CEF298BAFC100F842D0 /* iOSEZUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C0CEE298BAFC100F842D0 /* iOSEZUITestsLaunchTests.m */; };
+		B07F81822A1E15F8005314D5 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F81812A1E15F8005314D5 /* TimerView.swift */; };
 		B0846DE72A063655001E5DA0 /* EZTCAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0846DE62A063655001E5DA0 /* EZTCAViewController.swift */; };
 		B0846DEA2A06396D001E5DA0 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B0846DE92A06396D001E5DA0 /* ComposableArchitecture */; };
 		B0A9209C2A12202300B84FAD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A9209B2A12202200B84FAD /* XCTest.framework */; platformFilter = ios; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -71,6 +73,7 @@
 		B0758E0D2A1207FF00A20A61 /* EZTCASwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZTCASwiftUIViewController.swift; sourceTree = "<group>"; };
 		B0758E0F2A120A4D00A20A61 /* iOSEZTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSEZTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		B0758E1A2A121A3E00A20A61 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
+		B078C2E02A1F398C0086FD8C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		B07C0CC3298BAFC000F842D0 /* iOSEZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSEZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07C0CC6298BAFC000F842D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B07C0CC7298BAFC000F842D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		B07C0CE8298BAFC100F842D0 /* iOSEZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSEZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07C0CEC298BAFC100F842D0 /* iOSEZUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSEZUITests.m; sourceTree = "<group>"; };
 		B07C0CEE298BAFC100F842D0 /* iOSEZUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSEZUITestsLaunchTests.m; sourceTree = "<group>"; };
+		B07F81812A1E15F8005314D5 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		B0846DE62A063655001E5DA0 /* EZTCAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZTCAViewController.swift; sourceTree = "<group>"; };
 		B0A920992A121F9A00B84FAD /* Xcode.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Xcode.app; path = ../../../../Applications/Xcode.app; sourceTree = "<group>"; };
 		B0A9209B2A12202200B84FAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -168,6 +172,8 @@
 				B0846DE62A063655001E5DA0 /* EZTCAViewController.swift */,
 				B0758E0B2A11DB8000A20A61 /* TCAContentView.swift */,
 				B0758E0D2A1207FF00A20A61 /* EZTCASwiftUIViewController.swift */,
+				B07F81812A1E15F8005314D5 /* TimerView.swift */,
+				B078C2E02A1F398C0086FD8C /* GameView.swift */,
 			);
 			path = Swift_Combine;
 			sourceTree = "<group>";
@@ -485,9 +491,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07F81822A1E15F8005314D5 /* TimerView.swift in Sources */,
 				B0758E0E2A1207FF00A20A61 /* EZTCASwiftUIViewController.swift in Sources */,
 				B0846DE72A063655001E5DA0 /* EZTCAViewController.swift in Sources */,
 				B0C06BA0299F16C8008A3493 /* EZCombineUIControl.swift in Sources */,
+				B078C2E12A1F398C0086FD8C /* GameView.swift in Sources */,
 				B00D001C29A34EF80024DC25 /* PublisherTest.swift in Sources */,
 				B07C0CC8298BAFC000F842D0 /* AppDelegate.m in Sources */,
 				B07C0CD9298BAFC100F842D0 /* main.m in Sources */,
@@ -674,7 +682,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -708,7 +716,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -735,7 +743,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XNJX6XDKBF;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -764,7 +772,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XNJX6XDKBF;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

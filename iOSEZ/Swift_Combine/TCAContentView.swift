@@ -13,6 +13,10 @@ import ComposableArchitecture
 // 处理外部依赖项
 struct CounterFactor {
     var randomNum: Int = 0
+    
+    func numRandom() -> Int {
+        return Int.random(in: -100...100)
+    }
 }
 
 extension CounterFactor: DependencyKey {
@@ -66,7 +70,7 @@ struct CounterFeature: ReducerProtocol {
             state.count = 0
             // 外部依赖项 - Int.random
 //            state.secret = Int.random(in: -100...100)
-            state.secret = counterFactor.randomNum
+            state.secret = counterFactor.numRandom()
             return .none
         case let .setCount(text):
             if let value = Int(text) {
@@ -194,6 +198,56 @@ struct TCAContentView: View {
                     TextField(".\(tempText)", text: $tempText)
                     .frame(width: 40)
                     .multilineTextAlignment(.center)
+                }
+            }
+        }
+    }
+}
+
+// 单抽出来一个 CounterView 给外部使用
+struct CounterView: View {
+    let store: Store<CounterFeature.State, CounterFeature.Action>
+    var body: some View {
+        WithViewStore(store) { viewStore in
+            VStack {
+                checkLabel(with: viewStore.checkResult)
+                HStack {
+                    Button("-") {
+                        viewStore.send(.decrement)
+                    }
+                    
+                    // viewStore 的 binding 实现单向数据流，state 的改变都通过 reducer 来完成
+                    let textField = TextField(".\(viewStore.count)", text: viewStore.binding(get: { state in
+                        String(describing: state.count)
+                    }, send: { value in
+                        CounterFeature.Action.setCount(value)
+                    }))
+                        .frame(width: 40)
+                        .multilineTextAlignment(.center)
+                    
+                    // color change
+                    if viewStore.count > 0 {
+                        textField.foregroundColor(.green)
+                    } else if viewStore.count == 0 {
+                        textField.foregroundColor(.black)
+                    } else {
+                        textField.foregroundColor(.red)
+                    }
+                    
+                    Button("+") {
+                        viewStore.send(.increment)
+                    }
+                }
+                
+                Slider(value: viewStore.binding(get: { state in
+                    Double(state.count)
+                }, send: { value in
+                    CounterFeature.Action.changeCount(value)
+                }), in: -100...100)
+                .frame(width: 200)
+                
+                Button("playNext") {
+                    viewStore.send(.playNext)
                 }
             }
         }

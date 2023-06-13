@@ -8,7 +8,7 @@ target 'iOSEZ' do
   # @ezrealzhang 测试用的
   # Pods for iOSEZ
   # @ezrealzhang 使用 swift ui 需要注释掉 lookin，该库不支持 模拟器链接，并更新下 pod
-#  pod 'LookinServer', "1.0.0", :configurations => ['Debug', 'release']
+  pod 'LookinServer', "1.0.0", :configurations => ['Debug', 'release']
   pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git', :tag => "2.2.5"
   
   target 'iOSEZTests' do

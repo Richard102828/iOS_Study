@@ -10,6 +10,7 @@
 #import "EZFrequentlyAnimationViewController.h"
 #import "SVProgressHUD.h"
 #import "iOSEZ-Swift.h"
+#import "GlobleDefines.h"
 
 #define kCellReuseIdentifier    @"EZHomeVCTableViewCell_Identifier"
 
@@ -17,6 +18,8 @@
 #define kSection_1          @"SwiftUI"
 #define kSection_2          @"并发"
 #define kSection_3          @"音视频"
+#define kSection_4          @"push/present vc"
+#define kSection_last       @"temp_test"
 
 #define kSection_0_row_0    @"频繁的动画"
 #define kSection_1_row_0    @"swift ui"
@@ -25,6 +28,9 @@
 #define kSection_1_row_3    @"tca - swiftui"
 #define kScetion_2_row_0    @"swift 并发"
 #define kSection_3_row_0    @"音视频_1"
+#define kSection_4_row_0    @"push/pop"
+#define kSection_4_row_1    @"present/dismiss"
+#define kSection_last_row_0 @"navc push navc"
 
 
 @interface EZHomeViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -41,12 +47,30 @@
     self.view.backgroundColor = UIColor.whiteColor;
     
     [self.view addSubview:self.tableView];
+//    [self setupTestNavigationBar];
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     // frame
     self.tableView.frame = self.view.bounds;
+}
+
+- (void)setupTestNavigationBar {
+        // test
+    UINavigationBar *bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, self.navigationController.navigationBar.frame.size.height)];
+    UINavigationItem *item1 = [[UINavigationItem alloc] initWithTitle:@"new"];
+    item1.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"back_1" menu:nil];
+    UINavigationItem *item2 = [[UINavigationItem alloc] initWithTitle:@"old"];
+    item2.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"back_2" menu:nil];
+    bar.items = @[item1, item2];
+//    [bar pushNavigationItem:[[UINavigationItem alloc] initWithTitle:@"other"] animated:YES];
+    
+    [self.view addSubview:bar];
+//    nvc.navigationBar.items = @[[[UINavigationItem alloc] initWithTitle:@"new"], self.rootVC.navigationItem];
+//    [nvc.navigationBar pushNavigationItem:[[UINavigationItem alloc] initWithTitle:@"new"] animated:YES];
+//    nvc.accessibilityNavigationStyle = UIAccessibilityNavigationStyleSeparate;
+    [EZLogger logWithTag:NSStringFromClass(EZHomeViewController.class) content:[NSString stringWithFormat:@"navigation item count: %lu, top: %@, back: %@", (unsigned long)bar.items.count, [bar.topItem title], [bar.backItem title]]];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -83,6 +107,16 @@
     } else if ([title isEqualToString:kSection_1_row_3]) {
         EZTCASwiftUIViewController *vc = [[EZTCASwiftUIViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:kSection_4_row_0]) {
+        EZPushTestViewController *vc = [[EZPushTestViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:kSection_4_row_1]) {
+        EZPresentTestViewController *vc = [[EZPresentTestViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:kSection_last_row_0]) {
+        // test - 这里会 crash
+        EZPresentTestViewController *vc = [[EZPresentTestViewController alloc] init];
+        [self.navigationController pushViewController: [[UINavigationController alloc] initWithRootViewController:vc] animated:YES];
     } else {
         [SVProgressHUD showInfoWithStatus:@"尚未实现"];
     }
@@ -116,6 +150,13 @@
             ]},
             @{kSection_3 : @[
                 kSection_3_row_0,
+            ]},
+            @{kSection_4 : @[
+                kSection_4_row_0,
+                kSection_4_row_1,
+            ]},
+            @{kSection_last : @[
+                kSection_last_row_0,
             ]},
         ];
     }

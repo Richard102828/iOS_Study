@@ -1,8 +1,14 @@
 PODS:
+  - LookinServer (1.0.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - LookinServer (= 1.0.0)
   - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`, tag `2.2.5`)
+
+SPEC REPOS:
+  trunk:
+    - LookinServer
 
 EXTERNAL SOURCES:
   SVProgressHUD:
@@ -15,8 +21,9 @@ CHECKOUT OPTIONS:
     :tag: 2.2.5
 
 SPEC CHECKSUMS:
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: f9a4b80d0841de6d9069308e3ac9ccadc22c4381
+PODFILE CHECKSUM: 8853ac8e644b0d3b6635bba0dcea5a8f386e2c80
 
 COCOAPODS: 1.11.3

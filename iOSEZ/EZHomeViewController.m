@@ -112,7 +112,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if ([title isEqualToString:kSection_4_row_1]) {
         EZPresentTestViewController *vc = [[EZPresentTestViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
+//        [self.navigationController pushViewController:vc animated:YES];
+        [EZLogger logWithTag:NSStringFromClass(EZHomeViewController.class) content:[NSString stringWithFormat:@"present vc modal style: %lu", vc.modalPresentationStyle]];
+        [self presentViewController:vc animated:YES completion:nil];
     } else if ([title isEqualToString:kSection_last_row_0]) {
         // test - 这里会 crash
         EZPresentTestViewController *vc = [[EZPresentTestViewController alloc] init];

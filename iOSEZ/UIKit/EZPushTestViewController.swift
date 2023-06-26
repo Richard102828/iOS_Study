@@ -46,6 +46,7 @@ class EZPushTestViewController: UIViewController {
             EZLogger.log(tag: "top", content: String(describing: navc.topViewController))
             EZLogger.log(tag: "navc", content: String(describing: navc))
             EZLogger.log(tag: "visible", content: String(describing: navc.visibleViewController))
+            EZLogger.log(tag: "children", content: String(describing: navc.children))
         }
         
         if let presentingVC = presentingViewController,
@@ -86,18 +87,30 @@ class EZPushTestViewController: UIViewController {
     
     override func willMove(toParent parent: UIViewController?) {
         super.willMove(toParent: parent)
-        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "\(#function) - parent: \(String(describing: parent))")
+        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "\(#function) - parent: \(String(describing: parent)) - children: \(String(describing: navigationController?.children))")
     }
     
     override func didMove(toParent parent: UIViewController?) {
         super.didMove(toParent: parent)
-        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "\(#function) - parent: \(String(describing: parent))")
+        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "\(#function) - parent: \(String(describing: parent)) - children: \(String(describing: navigationController?.children))")
     }
     
     // MARK: - UI
     
     @objc private func presentVC() {
-        present(EZPresentTestViewController(), animated: true)
+        let vc = EZPresentTestViewController()
+        // test
+//        vc.modalPresentationStyle = .popover
+        
+//        vc.modalPresentationStyle = .overCurrentContext
+//        vc.modalPresentationStyle = .currentContext
+        
+//        vc.modalPresentationStyle = .pageSheet
+//        vc.modalPresentationStyle = .formSheet
+        
+        vc.modalPresentationStyle = .fullScreen
+//        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
     
     @objc private func pushVC() {
@@ -105,27 +118,28 @@ class EZPushTestViewController: UIViewController {
 //            navc.pushViewController(EZPushTestViewController(), animated: true)
 //        }
         if let navc = navigationController {
+            // @ezrealzhang push 的动画有无会对整个生命周期有影响吗？
             navc.pushViewController(EZPresentTestViewController(), animated: true)
         }
     }
     
     // @ezrealzhang 研究下这种情况下的生命周期
     @objc private func addChildVC() {
-        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "1 \(#function) - parent: \(String(describing: presentTestVC.parent))")
+        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "1 \(#function) - parent: \(String(describing: presentTestVC.parent)) - children: \(self.children)")
         addChild(presentTestVC)
-        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "2 \(#function) - parent: \(String(describing: presentTestVC.parent))")
+        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "2 \(#function) - parent: \(String(describing: presentTestVC.parent)) - children: \(self.children)")
         view.addSubview(presentTestVC.view)
         presentTestVC.didMove(toParent: self)
-        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "3 \(#function) - parent: \(String(describing: presentTestVC.parent))")
+        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "3 \(#function) - parent: \(String(describing: presentTestVC.parent)) - children: \(self.children)")
     }
     
     @objc private func removeChildVC() {
-        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "4 \(#function) - parent: \(String(describing: presentTestVC.parent))")
+        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "4 \(#function) - parent: \(String(describing: presentTestVC.parent)) - children: \(self.children)")
         presentTestVC.willMove(toParent: nil)
-        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "5 \(#function) - parent: \(String(describing: presentTestVC.parent))")
+        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "5 \(#function) - parent: \(String(describing: presentTestVC.parent)) - children: \(self.children)")
         presentTestVC.view.removeFromSuperview()
         presentTestVC.removeFromParent()
-        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "6 \(#function) - parent: \(String(describing: presentTestVC.parent))")
+        EZLogger.log(tag: "\(EZPushTestViewController.self)", content: "6 \(#function) - parent: \(String(describing: presentTestVC.parent)) - children: \(self.children)")
     }
     
     @objc private func layoutAgain() {

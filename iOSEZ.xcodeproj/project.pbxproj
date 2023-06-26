@@ -37,6 +37,7 @@
 		B0B86FF72A124D490071E5AE /* TCAContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0758E0B2A11DB8000A20A61 /* TCAContentView.swift */; };
 		B0C06BA0299F16C8008A3493 /* EZCombineUIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C06B9F299F16C8008A3493 /* EZCombineUIControl.swift */; };
 		B0C06BA2299F2EA8008A3493 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C06BA1299F2EA8008A3493 /* RegisterViewModel.swift */; };
+		B0D533CE2A4841400030BA46 /* EZGlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D533CD2A4841400030BA46 /* EZGlobalConfig.swift */; };
 		F55AD15EEA31AD067C754774 /* Pods_iOSEZTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F59A7F0E31986D8BAB47C1 /* Pods_iOSEZTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		B0A9209B2A12202200B84FAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B0C06B9F299F16C8008A3493 /* EZCombineUIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZCombineUIControl.swift; sourceTree = "<group>"; };
 		B0C06BA1299F2EA8008A3493 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		B0D533CD2A4841400030BA46 /* EZGlobalConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZGlobalConfig.swift; sourceTree = "<group>"; };
 		B0EF2D092A36F42C007AEB4C /* GlobleDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobleDefines.h; sourceTree = "<group>"; };
 		C2F59A7F0E31986D8BAB47C1 /* Pods_iOSEZTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSEZTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC844000A4DE76470D15944C /* Pods-iOSEZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSEZ.release.xcconfig"; path = "Target Support Files/Pods-iOSEZ/Pods-iOSEZ.release.xcconfig"; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				B01B7214299BC2AD00FC4907 /* iOSEZ-Bridging-Header.h */,
 				B02869312A33184000DBE25D /* EZLogger.swift */,
 				B0EF2D092A36F42C007AEB4C /* GlobleDefines.h */,
+				B0D533CD2A4841400030BA46 /* EZGlobalConfig.swift */,
 			);
 			path = iOSEZ;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07F81822A1E15F8005314D5 /* TimerView.swift in Sources */,
+				B0D533CE2A4841400030BA46 /* EZGlobalConfig.swift in Sources */,
 				B0758E0E2A1207FF00A20A61 /* EZTCASwiftUIViewController.swift in Sources */,
 				B0846DE72A063655001E5DA0 /* EZTCAViewController.swift in Sources */,
 				B0C06BA0299F16C8008A3493 /* EZCombineUIControl.swift in Sources */,
